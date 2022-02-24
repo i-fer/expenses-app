@@ -19,7 +19,7 @@ export default function BudgetCards({name, amount, max, gray}) {
                 <div className="d-flex align-items-baseline">
                     {/* <div>{currencyFormatter.format(amount)}/ {currencyFormatter.format(max)}</div> */}
                     {amount}
-                    <span calssName="text-muted fs-6 ms-1">/ {max}
+                    <span className="text-muted fs-6 ms-1">/ {max}
                     </span>
                 </div>
             </Card.Title>

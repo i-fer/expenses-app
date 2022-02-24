@@ -18,13 +18,13 @@ export const BudgetsProvider = ({children}) => {
     
     function  addExpense (description, amount, budgetId){
         setExpense(prevExpenses => {
-            return [...prevExpenses, {id: uuiV4, description, amount, budgetId}]
+            return [...prevExpenses, {id: uuiV4(), description, amount, budgetId}]
         })
     }
 
     function addBudget(name, max){
         setBudgets(prevBudgets => {
-            return [...prevBudgets, {id: uuiV4, name, max} ]
+            return [...prevBudgets, {id: uuiV4(), name, max} ]
         })
         
     }
